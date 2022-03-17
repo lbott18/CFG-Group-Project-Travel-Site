@@ -1,0 +1,472 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0093FF;
+    background: linear-gradient(#0093FF 0%, #00CEFF 35%, #00D5FC 60%,  #2EF7C8);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Titillium Web", sans-serif;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:visited{
+     text-decoration: none;
+}
+
+/* navigation bar*/
+
+.navitem:hover {
+    text-decoration: none;
+    background-color: #FFAC5A;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#title {
+    color: white;
+    font-family: "Titillium Web";
+    letter-spacing: 25px;
+    font-size: 1.2em;
+    margin: 3rem;
+}
+
+.title a {
+    text-decoration: none;
+}
+
+.primarynav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.primarynav li {
+    list-style: none;
+    border-radius: 1rem;
+}
+
+.primarynav li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Titillium Web";
+    padding: 2rem;
+    display: block;
+    font-size: 14px;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Section 1 - Image Carousel */
+
+.sectiontit {
+    color: white;
+    font-size: 15px;
+    padding-left: 2.89rem;
+}
+
+.home_mainpic {
+    position: fixed;
+    right: 450px;
+    opacity: 60%;
+}
+
+/* beach image and adventure text */
+
+.navbelow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.belowpic {
+    height: 300px;
+    width: 3500px;
+    object-fit: cover;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.beach_cont {
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #37abff;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 700;
+    padding: 10px;
+    background-color: white;
+    width: 1600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 92px;
+    text-shadow: 0 1px 3px rgb(238, 237, 237), 0 1px 3px grey;
+}
+
+.go_button{
+    font-size: 15px;
+    font-family: "Titillium Web", sans-serif;
+    letter-spacing: 8px;
+    color: white;
+    background-color: #fcaa40;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /*background-color: #006905;*/
+}
+
+.go_button:hover{
+    background-color: #ffc400;
+    cursor: pointer;
+}
+
+/* Popup details */
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.poptext {
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 18px;
+    padding-top: 18px;
+}
+
+.poptexts {
+    letter-spacing: 2px;
+    color: white;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.popup_cont {
+    background-color: white;
+    background: linear-gradient(#0093FF 0%, #00CEFF 35%, #00D5FC 60%,  #2EF7C8);
+    margin: auto;
+    padding: 20px;
+    width: 25%;
+    height: 30%;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mail_gif {
+    position: relative;
+    float: right;
+    margin-right: 20px;
+}
+
+#fname {
+    width: 10%;
+    border: none;
+    border-bottom: 2px solid #fcaa40;
+    background-color: rgba(0, 0, 0, 0);
+    transition: width 0.3s ease-in-out;
+    color: rgb(69, 112, 0);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#email {
+    width: 10%;
+    border: none;
+    border-bottom: 2px solid #fcaa40;
+    background-color: rgba(0, 0, 0, 0);
+    transition: width 0.3s ease-in-out;
+    color: rgb(69, 112, 0);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#fname:focus {
+    width: 40%;
+    outline: none !important;
+    color: rgb(69, 112, 0);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+#email:focus {
+    width: 40%;
+    outline: none !important;
+    color: rgb(69, 112, 0);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+
+#fname:active {
+    width: 40%;
+    outline: none !important;
+}
+
+#email:active {
+    width: 40%;
+    outline: none !important;
+}
+
+.submit {
+    font-size: 10px;
+    font-family: "Titillium Web", sans-serif;
+    letter-spacing: 4px;
+    color: white;
+    background-color: #fcaa40;
+    border: none;
+    border-radius: 4px;
+}
+
+.submit:hover {
+    background-color: #ffc400;
+    cursor: pointer;
+}
+
+.close {
+    color: #0093FF;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffc400;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* tip texts */
+
+.one_bord{
+    padding: 5px;
+      background: linear-gradient(110deg, #fcaa40 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #2EF7C8 34%, #00CEFF 34%);
+    background-size: 400% 400%;
+    height: 150px;
+    background-position: 25% 50%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 5s ease infinite;
+  }
+  .inner-cutout{
+    padding: 40px 0;
+    display: block;
+    background-color: white;/*#ff6f69*/
+    border-radius: 4px;
+      
+    margin: 2%;
+    padding-bottom: 40px;
+    height: 120px;
+    /*background: radial-gradient(#ffeead, #ffc400);*/
+     background-size: 300%;
+    background-position:50% 50%;
+  
+  }
+
+  #tip_onet {
+      position: relative;
+      bottom: 60px;
+  }
+  .knockout {
+    
+    vertical-align: middle;
+    text-align: center;
+    font-size:40pt;
+    color: #ff6f69;
+    color: #fff;
+    background: linear-gradient(110deg, #fcaa40 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(110deg, #2EF7C8 34%, #00CEFF 34%);
+    background-size: 400%;
+     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  .knockout{
+      animation: Gradient 5s ease infinite;
+      -webkit-animation: Gradient 15s ease infinite;
+      -moz-animation: Gradient 5s ease infinite;
+  }
+  
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 30% 50%
+    }
+    50% {
+      background-position: 25% 50%
+    }
+    100% {
+      background-position: 30% 50%
+    }
+    
+  }
+  
+  .tip_one{
+    width: 500px;
+    height: 800px;
+    margin-left: 2%;
+    margin-right:40%;
+    margin-top: 5%;
+  }
+  
+ .trick_one {
+     padding-left: 550px;
+     top: 535px;
+     position: absolute;
+     float: right;
+     color: white;
+     font-size: 10pt;
+ } 
+
+#sec_one_tit {
+    color: white;
+    position: fixed;
+    font-size: 70px;
+    letter-spacing: 8px;
+    opacity: 60%;
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+#sec_one_text {
+    color: white;
+    position: fixed;
+    font-size: 40px;
+}
+
+/* Respomnsive Settings */
+
+@media  screen and (max-width: 768px) {
+    header {
+        height: 48px;
+        justify-content: space-between;
+        padding: 2 28px;
+    }    
+    .title a {
+        font-size: 0.9rem;
+    }
+    .primarynav {
+        position: fixed;
+        top: 0;
+        right: 0%;
+        background-color: rgba(255, 98, 0, 0.85);
+        color: white;
+        width: 50%;
+        height: 75vh;
+        padding: 24px 0;
+        z-index: 1;
+        overflow-x: hidden;
+        transform: translateX(100%);
+        transition: 0.3s ease-in-out;
+        border-radius: 0 0 0 50%;
+    }
+    .belowpic {
+        width: 100%;
+    }
+
+    .beach_cont {
+        width: 75%;
+        font-size: 1.5vh
+    }
+    .go_button {
+        font-size: 1.2vh;
+    }
+
+    .popup {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    -----------------
+    .mail_gif {
+        margin-right: -30px;
+    }
+
+    .navlist {
+        display: flex;
+        flex-direction: column;
+    }
+    .navitem {
+        margin: 0.2rem 0;
+    }
+    .hamburger {
+        display: block;
+        position: relative;
+        z-index: 1;
+
+        user-select: none;
+        
+        appearance: none;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+    }
+    .hamburger span {
+        display: block;
+        width: 25px;
+        height: 2px;
+        margin-bottom: 5px;
+        margin-right: 20px;
+        position: relative;
+
+        background-color: white;
+        border-radius: 6px;
+        z-index: 1;
+
+        transform-origin: 0 0;
+        transition: 0.4s;
+    }
+    .hamburger:hover span:nth-child(2) {
+        transform: translateX(5px);
+        background-color: #FFAC5A;
+    }
+    .hamburger.is-active span:nth-child(1) {
+        transform: translate(0px, -2px) rotate(45deg);
+    }
+    .hamburger.is-active span:nth-child(3) {
+        transform: translate(-1.1px, 1.5px) rotate(-45deg);
+    }
+    .hamburger.is-active span:nth-child(2) {
+        opacity: 0;
+        transform: translate(15px) rotate(-45deg);
+    }
+    .show{
+        right:50%;
+    }
+}
